@@ -1,0 +1,524 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Raleway', sans-serif;
+}
+.rightleft {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+}
+.links {
+    text-decoration: none;
+    color: rgb(65,151,136);
+}
+.links-two {
+    text-decoration: none;
+    color: black;
+}
+.sticky {
+    position: fixed;
+}
+.left-sticky-part {
+    /* padding: 10px; */
+    
+}
+.left-sticky-part img {
+    width: 150px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+.left-sticky-part h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    padding: 8px 20px;
+
+}
+.left-sticky-part .temp {
+    font-size: 15px;
+    color: rgb(148,148,148);
+    margin-bottom: 15px;
+    padding: 8px 20px;
+}
+.contacts {
+    list-style-type: none;
+    
+}
+.contacts .abt, .con, .portcolor {
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 8px 20px;
+}
+
+.abt:hover, .con:hover {
+    background-color: rgb(204,204,204);
+    cursor: pointer;
+}
+.contacts i {
+    margin-right: 20px;
+}
+.portcolor {
+    color: rgb(65,151,136);
+}
+.portcolor:hover {
+    background-color: rgb(204,204,204);
+    color: black;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+.contacts .socials i {
+
+    margin-right: 0;
+
+}
+.socials {
+    padding: 8px 20px;
+    
+}
+
+.right-side {
+    background-color: rgb(241,241,241);
+}
+
+.my-portfolio {
+  font-size: 36px;
+  font-weight: bolder;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+} 
+.filter-part {
+    font-size: 15px;
+    padding: 8px 0px;
+    margin-bottom: 15px;
+}
+.filter {
+    margin-right: 10px;
+}
+.all {
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    margin-right: 5px;
+}
+.all:hover{
+    background-color: rgb(204,204,204);
+    color: black;
+    cursor: pointer;
+}
+.design, .photos, .art {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px 8px;
+    margin-right: 5px;
+}
+.design:hover, .photos:hover, .art:hover {
+    background-color: rgb(204,204,204);
+    cursor: pointer;
+}
+.design i, .photos i, .art i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+.border {
+    border-bottom: 5px solid rgb(204,204,204);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.gridd {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 20px 20px;
+}
+
+.pictures img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eight {
+    background-color: rgb(255,255,255);
+}
+.lorem {
+    margin: 0 10px 15px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.lorem-details {
+    margin: 0 10px 15px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.pagination a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+.pagination a:not(.active) {
+    background-color: rgb(241,241,241);
+    padding: 5px 10px;
+    text-align: center;
+}
+.pagination a:not(.active):hover {
+    background-color: black;
+    color: white;
+}
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active {
+    background-color: black;
+    color: white !important;
+    padding: 5px 10px;
+    text-align: center;
+}
+.active:hover {
+    background-color: rgb(204,204,204);
+    color: black !important;
+}
+.pic-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.pic-section img {
+    width: 100%;
+    object-fit: cover;
+}
+.about-head {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.about-me-details {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.technical-skills .tech {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.technical-skills .skill-name {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.skill-rating-one, .skill-rating-two, .skill-rating-three {
+    background-color: rgb(158,158,158);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.skill-rating-one .rating {
+    background-color: rgb(97,97,97);
+    width: 95%;
+
+}
+.skill-rating-two .rating {
+    background-color: rgb(97,97,97);
+    width: 85%;
+}
+.skill-rating-three .rating {
+    background-color: rgb(97,97,97);
+    width: 80%;
+}
+.skill-rating-one .rating .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    color: white;
+}
+.skill-rating-two .rating .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    color: white;
+}
+.skill-rating-three .rating .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    color: white;
+}
+.download-resume {
+    border: none;
+    background-color: rgb(97,97,97);
+    padding: 10px 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.download-resume i {
+    margin-right: 5px;
+}
+.download-resume:hover {
+    background-color: rgb(204,204,204);
+    color: black;
+    cursor: pointer;
+}
+.charge-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;    
+    margin-top: 10px;
+}
+.how-much-i-charge .how-much {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.charge-details li {
+    list-style-type: none;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(221,221,221);
+    text-align: center;
+}
+.first-charge, .second-charge, .third-charge {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    margin-top: 15px;
+}
+.first-charge .head-charge, .second-charge .head-charge, .third-charge .head-charge {
+    padding: 25px 0;
+    border-bottom: 1px solid rgb(221,221,221);
+
+}
+.first-charge .head-charge {
+    background-color: black;
+    color: white;
+}
+.second-charge .head-charge {
+    background-color: rgb(65,151,136);
+    color: white;
+}
+.third-charge .head-charge {
+    background-color: black;
+    color: white;
+}
+
+.money {
+    padding: 25px 0 !important;
+    font-size: 30px;
+    
+}
+.money .month {
+    margin-top: 20px;
+    font-size: 15px !important;
+}
+.sign {
+    padding: 25px 0 !important;
+}
+.sign-up {
+    border: none;
+    background-color: rgb(65,151,136);
+    color: white;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+.details-of-work li:not(.sign) {
+    background-color: rgb(255,255,255);
+}
+
+.first-charge, .second-charge, .third-charge {
+    opacity: 0.7;
+}
+.first-charge:hover, .second-charge:hover, .third-charge:hover {
+    opacity: 1 !important;
+}
+.sign-up:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.contact-me {
+    margin-top: 50px;
+
+    background-color: rgb(158,158,158);
+}
+.contact-me .contact {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+.address {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.mail, .phone {
+    background-color: rgb(97,97,97);
+    color: white;
+    text-align: center;
+    padding: 30px 50px;
+}
+.chi {
+    background-color: rgb(65,151,136);
+    color: white;
+    padding: 30px 50px;
+    text-align: center;
+}
+.mail i, .chi i, .phone i {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.mail p, .chi p, .phone p {
+    font-size: 15px;
+}
+.address {
+    border-bottom: 1px solid white;
+    padding: 30px 0;
+}
+.msg-section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.name-text, .email-text, .msg-text {
+    font-size: 15px;
+}
+.msg-section input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.sendbtn {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.sendbtn:hover {
+    background-color: rgb(204,204,204);
+    color: black;
+    cursor: pointer;
+}
+.sendbtn i {
+    margin-right: 5px;
+}
+.footer-part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    background-color: rgb(97,97,97);
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+.footer .footer-head {
+    margin-bottom: 20px;
+}
+.footer-head {
+    font-size: 24px;
+}
+.powered {
+    margin-top: 15px;
+    font-size: 15px;
+}
+.powered .sharan {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.text-footer-left {
+    font-size: 15px;
+}
+.first-blog-post, .second-blog-post {
+    display: flex;
+    align-items: center;
+    
+
+}
+.first-blog-post {
+    border-bottom: 1px solid white;
+    padding: 20px 8px;
+}
+.blog-post img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.second-blog-post {
+    padding: 20px 8px;
+}
+.blog-head {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.blog-details {
+    font-size: 15px;
+}
+.first-blog-post:hover, .second-blog-post:hover {
+    background-color: rgb(204,204,204);
+    color: white;
+
+}
+.tagpart {
+    padding: 20px 0;
+
+}
+.travel {
+    background-color: black;
+    color: white;
+    padding: 2px 7px;
+    font-size: 18px;
+}
+.newyork, .london, .ikea, .norway, .diy, .ideas, .baby, .family, .news, .clothing, .shopping, .sports, .games {
+    background-color: rgb(158,158,158);
+    color: black;
+    display: inline-block;
+    padding: 2px 7px;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.rights-part {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+}
+.rights-part .sharan-copy {
+    text-decoration: underline;
+    cursor: pointer;
+}
